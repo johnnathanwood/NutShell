@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "",
+      "email": ""
+    },
+    {
+      "username": "johnnathanwood@gmail.com",
+      "email": "johnnathanwood@gmail.com",
+      "id": "DdoYJ9e"
+    },
+    {
+      "username": "johnnathanwood@gmail.com",
+      "email": "johnnathanwood@gmail.com",
+      "id": 1
+    }
+  ],
+  "friends": [
+    {
+      "relationshipID": "",
+      "friendsID": "",
+      "friendshipID": ""
+    }
+  ],
+  "newsArticle": [
+    {
+      "newsArticleID": 0,
+      "newsTitle": "",
+      "synopsis": "",
+      "URL": "",
+      "userID": 0
+    }
+  ],
+  "events": [
+    {
+      "eventsID": 0,
+      "eventsName": "",
+      "eventsDate": "",
+      "eventsLocation": "",
+      "userID": 0
+    }
+  ],
+  "task": [
+    {
+      "userNameID": 0,
+      "name": "",
+      "dueDate": "",
+      "completed": "",
+      "taskID": "",
+      "userID": 0
+    }
+  ],
+  "messages": [
+    {
+      "messagesID": "",
+      "message": "",
+      "date": "",
+      "userID": 0
+    }
+  ]
+}
