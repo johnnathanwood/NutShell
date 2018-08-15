@@ -25,11 +25,13 @@ const registerForm = Object.create(null, {
             <label for="email">Email</label>
             <input required type="text" id="email">
             </fieldset>
-            <button id="registerButton">Register</button>
+            <button id="registerButton">Sign Up</button>
             `
         }
     }
 })
+
+
 
 // const putFormOnPage = () => {
 //     $("#registrationform").html(registerForm.buildFormTemplate())
