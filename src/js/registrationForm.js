@@ -3,10 +3,15 @@ const registerForm = Object.create(null, {
 // clear the form
     clearForm: {
         value: () => {
-            document.querySelector("#userName").value = ""
-            document.querySelector("#userEmail").value = ""
+            document.querySelector("#username").value = ""
+            document.querySelector("#useremail").value = ""
         }
     },
+
+    // cont addListener = () => {
+    //     document.querySelector("#register")
+    //     .addEventListener("click", putFormOnPage)
+    // },
 
 // template for the registration form
     buildFormTemplate: {
@@ -26,6 +31,12 @@ const registerForm = Object.create(null, {
     }
 })
 
+// const putFormOnPage = () => {
+//     $("#registrationform").html(registerForm.buildFormTemplate())
+//     document.querySelector("#registerButton")
+//     .addEventListener("click", registerButton)
+
+// }
 
 module.exports = registerForm
 

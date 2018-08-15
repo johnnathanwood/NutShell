@@ -11,6 +11,7 @@ document.querySelector("#registerButton").addEventListener("click", () => {
         return n
     }
 
+// once username and email field are filled in. newUser holds the data until executed by the registerButton
     const newUser = {
         username: document.querySelector("#username").value,
         email: document.querySelector("#email").value,
@@ -22,6 +23,10 @@ document.querySelector("#registerButton").addEventListener("click", () => {
     registrationData.saveRegistration(newUser)
 
     .then(() => {
-        FormManager.clearForm()
+        regForm.clearForm()
     })
-    })
+
+    .then(
+        location.reload()
+    )
+})
