@@ -4,7 +4,7 @@ const logForm = require("./loginForm")
 // targeting <div> on index to build template for form
 document.querySelector("#registrationForm").innerHTML = regForm.buildFormTemplate()
 
-// document.querySelector("#login").innerHTML = logForm.buildLoginTemplate()
+document.querySelector("#login").innerHTML = logForm.buildLoginTemplate()
 
 // targeting registerButton to add a listener when clicked
 document.querySelector("#registerButton").addEventListener("click", () => {
