@@ -3,8 +3,8 @@ const loginForm = Object.create(null, {
     // clear the form
         clearForm: {
             value: () => {
-                document.querySelector("#username").value = ""
-                document.querySelector("#useremail").value = ""
+                document.querySelector("#userName").value = ""
+                document.querySelector("#userEmail").value = ""
             }
         },
 

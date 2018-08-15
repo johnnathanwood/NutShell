@@ -4,7 +4,7 @@ const registerForm = Object.create(null, {
     clearForm: {
         value: () => {
             document.querySelector("#username").value = ""
-            document.querySelector("#useremail").value = ""
+            document.querySelector("#email").value = ""
         }
     },
 
