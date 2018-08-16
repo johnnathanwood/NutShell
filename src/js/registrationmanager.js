@@ -1,4 +1,5 @@
-let registrationData = {}
+const registrationData = {}
+
 
 registrationData.saveRegistration = (entry) => {
     return fetch("http://localhost:8088/users", {
@@ -8,11 +9,11 @@ registrationData.saveRegistration = (entry) => {
         },
         body: JSON.stringify(entry)
     })
-    .then(response => response.json())
+    .then(result => result.json())
     }
     registrationData.loadRegistration = () => {
         return fetch("http://localhost:8088/users")
-        .then (response => response.json())
+        .then (result => result.json())
     }
 
     module.exports = registrationData
