@@ -16,4 +16,9 @@ registrationData.saveRegistration = (entry) => {
         .then (result => result.json())
     }
 
+    registrationData.getAllUsers = () => {
+        return fetch("http://localhost:8088/users")
+            .then (r => r.json())
+}
+
     module.exports = registrationData
