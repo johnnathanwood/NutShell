@@ -21,8 +21,8 @@ function register(){
             if(allUsers[i].userName === userName || allUsers[i].userEmail === userEmail){
                 alert("your username AND email must be unique. We found a duplicate in your database.")
             }else{
-                alert("woooo! you're logged in!")
-                //add them to db! and theeeeeennnn
+                alert(" You're logged in!")
+                //add them to the database
                 APIManager.addUserToDb(registeringUser)
                 .then(userThatWasAdded => {
                     sessionStorage.setItem("activeUser", JSON.stringify(userThatWasAdded));
