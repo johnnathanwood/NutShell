@@ -1,3 +1,5 @@
+const registerForm = require("./registrationForm")
+
 const loginForm = Object.create(null, {
 
     // clear the form
@@ -25,11 +27,21 @@ const loginForm = Object.create(null, {
                 <label for="email">Email</label>
                 <input required type="text" id="email">
                 </fieldset>
-                <button id="loginButton">Log In</button>
+                <button id="loginButton">Log In</button><button  id="function" onclick="buildForm()">Register</button>
                 `
             }
         }
     })
+
+    const addListener = () => {
+        document.querySelector("#function")
+            .addEventListener("click", renderForm)
+    }
+
+    function renderForm () {
+       registerForm(buildFormTemplate())
+        
+    }
 
 
 

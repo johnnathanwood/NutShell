@@ -1,5 +1,6 @@
 const regForm = require("./registrationForm")
 const registrationData = require("./registrationmanager")
+const loginData = require("./loginManager")
 const logForm = require("./loginForm")
 const regver = require("./registerverification")
 // targeting <div> on index to build template for form
@@ -9,6 +10,10 @@ document.querySelector("#login").innerHTML = logForm.buildLoginTemplate()
 
 // targeting registerButton to add a listener when clicked
 document.querySelector("#registerButton").addEventListener("click", () => {
+    regver()
+    })
+
+document.querySelector("#loginButton").addEventListener("click", () => {
     regver()
     })
 
@@ -22,6 +27,7 @@ document.querySelector("#registerButton").addEventListener("click", () => {
 
     // Send to API
     registrationData.saveRegistration(newUser)
+    loginData.loadLogIn(newUser)
 
     .then(() => {
         regForm.clearForm()

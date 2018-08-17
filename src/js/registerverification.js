@@ -12,7 +12,7 @@ console.log("register")
 
     //get users from the database
         data.getAllUsers().then(allUsers =>{
-        let registeringUser = {
+        const registeringUser = {
             userName: username,
             email: useremail
         }
@@ -23,12 +23,12 @@ console.log("register")
                 alert("your username AND email must be unique. We found a duplicate in your database.")
             }else{
                 alert(" You're logged in!")
-                //add them to the database
-                APIManager.addUserToDb(registeringUser)
+                // add them to the database
+                data.loadRegisreration(registeringUser)
                 .then(userThatWasAdded => {
                     sessionStorage.setItem("activeUser", JSON.stringify(userThatWasAdded));
                 })
-                //change the view
+                // change the view
             }
         }
     })

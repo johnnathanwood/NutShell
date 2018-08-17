@@ -7,12 +7,7 @@ const registerForm = Object.create(null, {
             document.querySelector("#email").value = ""
         }
     },
-
-    // cont addListener = () => {
-    //     document.querySelector("#register")
-    //     .addEventListener("click", putFormOnPage)
-    // },
-
+    
 // template for the registration form
     buildFormTemplate: {
         value: () => {
