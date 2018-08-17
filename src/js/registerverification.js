@@ -5,20 +5,21 @@ const form = require("./registrationForm")
 
 function register(){
     //values from the form when someone hits submit
-
+console.log("register")
     let username = document.getElementById("entryUsername")
 
     let useremail = document.getElementById("entryEmail")
 
     //get users from the database
-    registrationData.getAllUsers().then(allUsers =>{
+        data.getAllUsers().then(allUsers =>{
         let registeringUser = {
-            userName: userName,
-            email: userEmail
+            userName: username,
+            email: useremail
         }
+        console.log("registeringUser".username)
         //loop over the users in the database and compare values from the form
         for(let i = 0; i < allUsers.length; i++){
-            if(allUsers[i].userName === userName || allUsers[i].userEmail === userEmail){
+            if(allUsers[i].userName === username || allUsers[i].userEmail === useremail){
                 alert("your username AND email must be unique. We found a duplicate in your database.")
             }else{
                 alert(" You're logged in!")
@@ -34,4 +35,4 @@ function register(){
 
 }
 
-module.export = register
+module.exports = register
