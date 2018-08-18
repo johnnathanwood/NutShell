@@ -1,4 +1,5 @@
 const registerForm = require("./registrationForm")
+const verification = require("./registerverification")
 
 const loginForm = Object.create(null, {
 
